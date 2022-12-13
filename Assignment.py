@@ -3,6 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns 
 
+#emma is crazy
+
 def pandas_reader(path): 
     """The aim of this function is to r"""
 
