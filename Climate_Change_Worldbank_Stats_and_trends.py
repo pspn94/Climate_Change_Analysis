@@ -205,7 +205,7 @@ ax.set_yticks([])
 
 plt.legend(bbox_to_anchor=(0., .97, 1., .102), loc='lower left',
                       ncol=3, mode="expand")
-fig.suptitle('Access to electricity percentage (2000-2018)', fontsize=14)
+fig.suptitle('Access to electricity percentage (2000-2018)', fontsize=12)
 
 plt.tight_layout()
 plt.savefig('plot5', dpi=300);
@@ -233,7 +233,7 @@ ax.set_yticks([])
 
 plt.legend(bbox_to_anchor=(0., .97, 1., .102), loc='lower left',
                       ncol=3, mode="expand")
-fig.suptitle('Prevalence of underweight childrens (2000-2018)', fontsize=14)
+fig.suptitle('Prevalence of underweight childrens (2000-2018)', fontsize=12)
 
 plt.tight_layout()
 plt.savefig('plot6', dpi=300);
