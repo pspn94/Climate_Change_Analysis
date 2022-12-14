@@ -179,8 +179,8 @@ sns.heatmap(df_1990_until_2019.loc[:, (slice(None), ['World'])]\
             annot=True, xticklabels=False, yticklabels=ind_names2)\
     .set(title='World', xlabel='', ylabel='')
 
-plt.show()
-plt.savefig('plot4', dpi=300);
+plt.savefig('plot3', dpi=300)
+plt.show();
 
 # plotting bar chart of incomes
 fig, ax = plt.subplots(dpi=240)
@@ -208,7 +208,7 @@ plt.legend(bbox_to_anchor=(0., .97, 1., .102), loc='lower left',
 fig.suptitle('Access to electricity percentage (2000-2018)', fontsize=12)
 
 plt.tight_layout()
-plt.savefig('plot5', dpi=300);
+plt.savefig('plot4', dpi=300);
 
 # plotting bar chart of incomes
 fig, ax = plt.subplots(dpi=240)
@@ -236,4 +236,4 @@ plt.legend(bbox_to_anchor=(0., .97, 1., .102), loc='lower left',
 fig.suptitle('Prevalence of underweight childrens (2000-2018)', fontsize=12)
 
 plt.tight_layout()
-plt.savefig('plot6', dpi=300);
+plt.savefig('plot5', dpi=300);
