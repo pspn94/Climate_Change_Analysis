@@ -127,7 +127,8 @@ plt.title('CO2 emissions (kt) (1990-2019)')
 plt.xlabel('Years')
 plt.ylabel('Emissions')
 
-plt.tight_layout;
+plt.tight_layout
+plt.savefig('plot1', dpi=300);
 
 # plotting Urban population line graph
 fig, ax = plt.subplots(dpi=240)
@@ -146,7 +147,8 @@ plt.title('Urban population (1990-2019)')
 plt.xlabel('Years')
 plt.ylabel('Urban population')
 
-plt.tight_layout;
+plt.tight_layout()
+plt.savefig('plot2', dpi=300);
 
 # plotting heatmap for each choosen country
 for coun in countries:
@@ -155,6 +157,7 @@ for coun in countries:
              'Agricultural Land (%)',
              'Prevalence of underweight childrens',
              'Access to electricity']
+    
     fig, ax = plt.subplots(dpi=240)
 
     sns.heatmap(df_1990_until_2019.loc[:, (slice(None), [coun])]\
@@ -162,8 +165,10 @@ for coun in countries:
                 fmt='.2f', square=True, linecolor='white', vmax=1.0,
                 annot=True, xticklabels=False, yticklabels=ind_names)\
         .set(title=coun, xlabel='', ylabel='')
-
+        
+    plt.savefig(coun, dpi=300)
     plt.show();
+    
 
 # plotting heatmap of world
 fig, ax = plt.subplots(dpi=240)
@@ -174,7 +179,8 @@ sns.heatmap(df_1990_until_2019.loc[:, (slice(None), ['World'])]\
             annot=True, xticklabels=False, yticklabels=ind_names2)\
     .set(title='World', xlabel='', ylabel='')
 
-plt.show();
+plt.show()
+plt.savefig('plot4', dpi=300);
 
 # plotting bar chart of incomes
 fig, ax = plt.subplots(dpi=240)
@@ -201,7 +207,8 @@ plt.legend(bbox_to_anchor=(0., .97, 1., .102), loc='lower left',
                       ncol=3, mode="expand")
 fig.suptitle('Access to electricity percentage (2000-2018)', fontsize=14)
 
-plt.tight_layout();
+plt.tight_layout()
+plt.savefig('plot5', dpi=300);
 
 # plotting bar chart of incomes
 fig, ax = plt.subplots(dpi=240)
@@ -228,4 +235,5 @@ plt.legend(bbox_to_anchor=(0., .97, 1., .102), loc='lower left',
                       ncol=3, mode="expand")
 fig.suptitle('Prevalence of underweight childrens (2000-2018)', fontsize=14)
 
-plt.tight_layout();
+plt.tight_layout()
+plt.savefig('plot6', dpi=300);
