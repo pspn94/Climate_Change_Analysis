@@ -155,7 +155,7 @@ for coun in countries:
     ind_names = ['CO2 emissions (kt)',
              'Urban populations',
              'Agricultural Land (%)',
-             'Prevalence of underweight childrens',
+             'Prevalence of underweight children',
              'Access to electricity']
     
     fig, ax = plt.subplots(dpi=240)
@@ -233,7 +233,7 @@ ax.set_yticks([])
 
 plt.legend(bbox_to_anchor=(0., .97, 1., .102), loc='lower left',
                       ncol=3, mode="expand")
-fig.suptitle('Prevalence of underweight childrens (2000-2018)', fontsize=12)
+fig.suptitle('Prevalence of underweight children (2000-2018)', fontsize=12)
 
 plt.tight_layout()
 plt.savefig('plot5', dpi=300);
